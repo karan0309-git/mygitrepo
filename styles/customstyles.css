@@ -174,5 +174,7 @@
 }
 
 .custom-cards > .cards-wrapper > .cards > ul > li > cards-card-image {
-    height:20%;
+    height:20px;
+    width: 20px;;
 }
+
