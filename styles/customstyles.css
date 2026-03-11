@@ -174,8 +174,10 @@
 }
 
 .custom-cards > .cards-wrapper > .cards > ul > li > cards-card-image {
-  width: calc(100% - 40px); 
-  height: calc(100% - 40px); 
-  object-fit: contain;       
-  display: block;
+   height:20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
