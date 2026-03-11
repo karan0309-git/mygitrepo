@@ -181,7 +181,7 @@
 }
 
 .cards-wrapper {
-    display: flex;
+    display: inline-flex;
     flex-direction:column;
     width: 80px;;
     border-radius: 20px;
