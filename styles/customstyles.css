@@ -223,3 +223,175 @@
 .custom-cards1 > .cards-wrapper > .cards > ul > li > .cards-card-body > h2{
     text-align: center;
 }
+
+.custom-cards > .cards-wrapper {
+    margin-top: -50px;
+}
+
+.custom-cards > .cards-wrapper > .cards > ul > li:hover  {
+    background-color:#98a04a;
+    color: white;
+}
+
+.custom-cards > .cards-wrapper > .cards > ul > li > cards-card-image {
+    height:20px;
+    width: 20px;
+    padding: 20px 80px;
+    background: none;
+}
+
+.custom-cards > .cards-wrapper {
+    border-radius: 20px;
+    border: transparent;
+}
+
+.custom-cards > .cards-wrapper > .cards > ul > li > .cards-card-body > p {
+    text-align: center;
+}
+
+.cards-container > .default-content-wrapper > h2 {
+    text-align: center;
+}
+
+.cards-container > .default-content-wrapper > .cards-wrapper > .cards {
+    display:flex;
+    justify-content: center;
+    margin:0 auto;
+}
+
+.custom-cards1 > .cards-wrapper > .cards > ul > li:hover {
+    background-color:#98a04a;
+    color: white;;
+}
+
+.custom-cards1 > .cards-wrapper > .cards > ul > li > cards-card-image {
+    height:20px;
+    width: 20px;
+    padding: 20px 80px;
+    background: none;
+}
+
+.custom-cards1 > .cards-wrapper {
+    border-radius: 20px;
+    border: transparent;
+}
+
+.custom-cards1 > .cards-wrapper > .cards > ul > li > .cards-card-body > h2{
+    text-align: center;
+}
+
+.custom-cards > .cards-wrapper {
+    margin-top: -50px;
+}
+
+.custom-cards > .cards-wrapper > .cards > ul > li:hover  {
+    background-color:#98a04a;
+    color: white;
+}
+
+.custom-cards > .cards-wrapper > .cards > ul > li > cards-card-image {
+    height:20px;
+    width: 20px;
+    padding: 20px 80px;
+    background: none;
+}
+
+.custom-cards > .cards-wrapper {
+    border-radius: 20px;
+    border: transparent;
+}
+
+.custom-cards > .cards-wrapper > .cards > ul > li > .cards-card-body > p {
+    text-align: center;
+}
+
+.cards-container > .default-content-wrapper > h2 {
+    text-align: center;
+}
+
+.cards-container > .default-content-wrapper > .cards-wrapper > .cards {
+    display:flex;
+    justify-content: center;
+    margin:0 auto;
+}
+
+.custom-cards1 > .cards-wrapper > .cards > ul > li:hover {
+    background-color:#98a04a;
+    color: white;;
+}
+
+.custom-cards1 > .cards-wrapper > .cards > ul > li > cards-card-image {
+    height:20px;
+    width: 20px;
+    padding: 20px 80px;
+    background: none;
+}
+
+.custom-cards1 > .cards-wrapper {
+    border-radius: 20px;
+    border: transparent;
+}
+
+.custom-cards1 > .cards-wrapper > .cards > ul > li > .cards-card-body > h2{
+    text-align: center;
+}
+
+.custom-cards > .cards-wrapper {
+    margin-top: -50px;
+}
+
+.custom-cards > .cards-wrapper > .cards > ul > li:hover  {
+    background-color:#98a04a;
+    color: white;
+}
+
+.custom-cards > .cards-wrapper > .cards > ul > li > cards-card-image {
+    height:20px;
+    width: 20px;
+    padding: 20px 80px;
+    background: none;
+}
+
+.custom-cards > .cards-wrapper {
+    border-radius: 20px;
+    border: transparent;
+}
+
+.custom-cards > .cards-wrapper > .cards > ul > li > .cards-card-body > p {
+    text-align: center;
+}
+
+.cards-container > .default-content-wrapper > h2 {
+    text-align: center;
+}
+
+.cards-container > .default-content-wrapper > .cards-wrapper > .cards {
+    display:flex;
+    justify-content: center;
+    margin:0 auto;
+}
+
+.custom-cards1 > .cards-wrapper > .cards > ul > li:hover {
+    background-color:#98a04a;
+    color: white;;
+}
+
+.custom-cards1 > .cards-wrapper > .cards > ul > li > cards-card-image {
+    height:20px;
+    width: 20px;
+    padding: 20px 80px;
+    background: none;
+}
+
+.custom-cards1 > .cards-wrapper {
+    border-radius: 20px;
+    border: transparent;
+}
+
+.custom-cards1 > .cards-wrapper > .cards > ul > li > .cards-card-body > h2{
+    text-align: center;
+}
+
+.custom-cards1 > .cards-wrapper > .cards > ul > li > .cards-card-body > p{
+    text-align: center;
+}
