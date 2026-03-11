@@ -188,3 +188,7 @@
 .custom-cards > .cards-wrapper > .cards > ul > li > .cards-card-body > p {
     text-align: center;
 }
+
+.custom-cards > .cards-wrapper > .cards > ul > li > .cards-card-body > h2{
+    text-align: center;
+}
