@@ -172,3 +172,7 @@
     background-color:#98a04a;
     color: white;
 }
+
+.custom-cards > .cards-wrapper > .cards > ul > li > cards-card-image {
+    height:20%;
+}
