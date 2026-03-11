@@ -168,6 +168,10 @@
   .nav-brand img { max-height: 28px; }
 }
 
+.custom-cards > .cards-wrapper {
+    margin-top: -30px;
+}
+
 .custom-cards > .cards-wrapper > .cards > ul > li:hover  {
     background-color:#98a04a;
     color: white;
