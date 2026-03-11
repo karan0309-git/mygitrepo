@@ -169,7 +169,7 @@
 }
 
 .custom-cards > .cards-wrapper {
-    margin-top: -50px;
+    margin-top: -50%;
 }
 
 .custom-cards > .cards-wrapper > .cards > ul > li:hover  {
