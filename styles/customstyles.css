@@ -196,3 +196,7 @@
 .cards-container > .default-content-wrapper > h2 {
     text-align: center;
 }
+
+.cards-container > .default-content-wrapper > .cards-wrapper {
+    align-items: center;
+}
