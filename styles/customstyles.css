@@ -180,9 +180,10 @@
     background: none;
 }
 
-.cards-wrapper {
+.custom-cards > .cards-wrapper {
     display: flex;
-    align-items:center;
+    flex-direction: column;
+    width: 80px;;
     border-radius: 20px;
     border: transparent;
 }
