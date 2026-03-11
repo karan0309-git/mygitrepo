@@ -179,11 +179,3 @@
   object-fit: contain;       
   display: block;
 }
-
-.cards-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;;
-
-}
