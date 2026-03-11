@@ -181,9 +181,6 @@
 }
 
 .custom-cards > .cards-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 80px;;
     border-radius: 20px;
     border: transparent;
 }
