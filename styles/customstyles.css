@@ -184,3 +184,7 @@
     border-radius: 20px;
     border: transparent;
 }
+
+.custom-cards > .cards-wrapper > .cards > .cards-card-body {
+    text-align: center;
+}
