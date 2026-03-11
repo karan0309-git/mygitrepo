@@ -1,1 +1,170 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+/* ========= Variables (tweak as needed) ========= */
+:root {
+  --olive: #a8ae57;           /* accent (matches your reference) */
+  --olive-dark: #98a04a;
+  --text: #111;
+  --muted: #666;
+  --bg: #fff;
+  --border: #e8e8e8;
+  --shadow: 0 8px 24px rgba(0,0,0,.07);
+  --container: 1280px;
+  --gap: 28px;
+  --radius: 12px;
+  --transition: 160ms ease;
+}
+
+
+
+/* ========= Brand ========= */
+.nav-brand .default-content-wrapper {
+  display: flex; align-items: center;
+}
+.nav-brand picture, .nav-brand img {
+  display: block;
+  height: auto;
+}
+
+
+/* Optional sizing for your logo image */
+.nav-brand img {
+  max-height: 32px; /* adjust to taste */
+  width: auto;
+}
+
+/* ========= Menu / Sections ========= */
+.nav-sections .default-content-wrapper > ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* push menu to the right */
+  gap: var(--gap);
+}
+
+.nav-sections li > p {
+  margin: 0;
+  padding: 8px 0;  /* vertical rhythm */
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer; /* your <p> acts like a button */
+  color: #111;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+/* Add a subtle caret for .nav-drop items */
+.nav-sections .nav-drop > p::after {
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid var(--olive);
+  display: inline-block;
+  margin-left: 6px;
+  transform: translateY(2px);
+}
+
+/* Hover/active styles (desktop) */
+.nav-sections li > p:hover { color: var(--olive-dark); }
+
+/* ========= Dropdowns (Desktop) ========= */
+.nav-sections .nav-drop {
+  position: relative;
+}
+.nav-sections .nav-drop > ul {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 14px);
+  min-width: 240px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 10px 0;
+  opacity: 0; visibility: hidden; transform: translateY(6px);
+  transition: var(--transition);
+  z-index: 10;
+}
+.nav-sections .nav-drop > ul > li {
+  padding: 10px 16px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+.nav-sections .nav-drop > ul > li:hover {
+  background: #f7f8f2; color: var(--olive-dark);
+}
+
+/* ========= Support pill (if you keep Support as a normal li) ========= */
+.nav-sections li:last-child > p {
+  background: var(--olive);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: var(--transition);
+}
+.nav-sections li:last-child > p:hover { background: var(--olive-dark); }
+
+@media (max-width: 1024px) {
+  /* Put brand on the left, hamburger on the right, hide the horizontal menu */
+  .nav-brand { order: 1; }
+  .nav-sections { 
+    grid-column: 1 / -1; /* full width row */
+    order: 3;
+    width: 100%;
+  }
+
+  /* collapsed by default */
+  .nav-sections .default-content-wrapper > ul {
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    top: 100%;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+
+    opacity: 0; visibility: hidden; transform: translateY(6px);
+  }
+
+  /* expanded when #nav[aria-expanded="true"] */
+  #nav[aria-expanded="true"] .nav-sections .default-content-wrapper > ul {
+    opacity: 1; visibility: visible; transform: translateY(0);
+  }
+
+  .nav-sections li > p { padding: 12px; }
+
+  /* Make submenus stack within flow on mobile */
+  .nav-sections .nav-drop > ul {
+    position: static;
+    border: 0; box-shadow: none; padding: 0; margin-left: 10px;
+    opacity: 1; visibility: visible; transform: none;
+    display: none; /* collapsed by default on mobile; controlled via aria-expanded */
+  }
+  /* toggle using aria-expanded on the .nav-drop item */
+  .nav-sections .nav-drop[aria-expanded="true"] > ul {
+    display: block;
+  }
+}
+
+/* Slightly smaller phones */
+@media (max-width: 520px) {
+  .nav-brand img { max-height: 28px; }
+}
 
