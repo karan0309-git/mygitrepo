@@ -192,3 +192,7 @@
 .custom-cards > .cards-wrapper > .cards > ul > li > .cards-card-body > h2{
     text-align: center;
 }
+
+.cards-container > .default-content-wrapper > h2 {
+    text-align: center;
+}
