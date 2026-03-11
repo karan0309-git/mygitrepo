@@ -193,10 +193,6 @@
     text-align: center;
 }
 
-.custom-cards > .cards-wrapper > .cards > ul > li > .cards-card-body > h2{
-    text-align: center;
-}
-
 .cards-container > .default-content-wrapper > h2 {
     text-align: center;
 }
@@ -222,4 +218,8 @@
 .custom-cards1 > .cards-wrapper {
     border-radius: 20px;
     border: transparent;
+}
+
+.custom-cards1 > .cards-wrapper > .cards > ul > li > .cards-card-body > h2{
+    text-align: center;
 }
