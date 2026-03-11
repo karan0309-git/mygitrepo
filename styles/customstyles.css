@@ -185,6 +185,6 @@
     border: transparent;
 }
 
-.custom-cards > .cards-wrapper > .cards > .cards-card-body > ul > li > p {
+.custom-cards > .cards-wrapper > .cards > ul > li > .cards-card-body > p {
     text-align: center;
 }
