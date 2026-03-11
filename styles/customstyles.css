@@ -181,3 +181,10 @@
     justify-content: center;
 }
 
+.cards-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;;
+
+}
