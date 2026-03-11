@@ -198,5 +198,6 @@
 }
 
 .cards-container > .default-content-wrapper > .cards-wrapper {
+    display:inline;
     align-items: center;
 }
