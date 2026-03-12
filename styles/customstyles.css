@@ -395,3 +395,7 @@
 .custom-cards1 > .cards-wrapper > .cards > ul > li > .cards-card-body > p{
     text-align: center;
 }
+
+.custom-experts > .default-content-wrapper > .cards-wrapper > .cards > ul > li > .cards-card-body > p{
+    text-align: center;
+}
