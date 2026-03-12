@@ -1,1 +1,214 @@
+.goals {
+.goals-head
 
+    {
+ 
+        display:flex;
+
+        width:1024px;
+
+        gap:2%;
+
+        .goals-title{
+
+            width:40%;
+
+        }
+ 
+    .goals-description{
+
+                width:60%;
+
+        }
+
+    } 
+
+}
+ 
+/* Section spacing */
+
+.goals-container {
+
+  padding: 80px 0;
+
+}
+ 
+/* Layout */
+ 
+.goals.block {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 60px;
+
+}
+ 
+/* Image side */
+ 
+.goals-title img,
+
+.goals.block img {
+
+  width: 100%;height: revert-layer;
+
+  max-width: 450px;
+
+  border-radius: 6px;
+
+}
+ 
+/* Content side */
+ 
+.goals-description {
+
+  padding-left: 20px;
+
+}
+ 
+/* Heading */
+ 
+.goals-description h2 {
+
+  font-size: 36px;
+
+  font-weight: 700;
+
+  margin-bottom: 20px;}
+ 
+/* Paragraph */
+ 
+.goals-description p {
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+ 
+}
+ 
+/* Mission / Goal / Projects spacing */
+ 
+.goals-description h3,
+
+.goals-description h4 {
+ 
+  font-size: 20px;
+
+  font-weight: 600;
+
+  margin-top: 25px;
+
+  margin-bottom: 8px;
+ 
+}
+ 
+/* each item spacing */
+ 
+.goals-description > div {
+
+  margin-bottom: 18px;
+
+}
+ 
+.goals-head {
+ 
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+ 
+}
+ 
+/* image side */
+ 
+.goals-title {
+
+  flex: 1;
+
+}
+ 
+.goals-title img {
+
+  width: 100%;
+
+  max-width: 450px;
+
+  height: auto;
+
+  display: block;
+ 
+}
+
+.goals-description {
+
+  flex: 1;
+
+  padding-left: 30px;
+
+}
+ 
+/* heading spacing */
+ 
+.goals-description h2 {
+
+  margin-bottom: 15px;
+
+}
+ 
+/* paragraph spacing */
+ 
+.goals-description p {
+
+  margin-bottom: 15px;
+
+  line-height: 1.6;
+
+}
+ 
+/* mission goal project spacing */
+ 
+.goals-description h3,
+
+.goals-description h4 {
+
+  margin-top: 20px;
+
+  margin-bottom: 6px;
+
+}
+
+.goals-description a {
+ 
+  display: inline-block;
+
+  margin-top: 20px;
+
+  padding: 12px 28px;
+
+  background-color: #8a7b2d;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  border-radius: 30px;
+
+  transition: all 0.3s ease;
+
+}
+ 
+.goals-description a:hover {
+
+  background-color: #6f6423;
+
+}
+ 
+ 
