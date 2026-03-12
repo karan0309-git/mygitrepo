@@ -187,7 +187,7 @@
     color: white;
 }
 
-.custom-cards > .cards-wrapper > .cards > ul > li > cards-card-image > img {
+.custom-cards > .cards-wrapper > .cards > ul > li > .cards-card-image > img {
     width:60px;
 }
 
@@ -215,7 +215,7 @@
     color: white;;
 }
 
-.custom-cards1 > .cards-wrapper > .cards > ul > li > cards-card-image {
+.custom-cards1 > .cards-wrapper > .cards > ul > li > .cards-card-image {
     height:20px;
     width: 20px;
     padding: 20px 80px;
