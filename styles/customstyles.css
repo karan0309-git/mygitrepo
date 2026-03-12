@@ -205,6 +205,15 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
     margin-top: -50px;
 }
  
+.custom-cards > .cards-wrapper > .cards {
+    text-align:center;
+}
+
+.custom-cards > .cards-wrapper > .cards > ul >li {
+    height:200px;
+}
+
+
 .custom-cards > .cards-wrapper > .cards > ul > li:hover  {
     background-color:#98a04a;
     color: white;
@@ -239,11 +248,8 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
     color: white;;
 }
  
-.custom-cards1 > .cards-wrapper > .cards > ul > li > cards-card-image {
-    height:20px;
-    width: 20px;
-    padding: 20px 80px;
-    background: none;
+.custom-cards1 > .cards-wrapper > .cards > ul > li > .cards-card-image img {
+   width:150px;
 }
  .custom-cards1 > .cards-wrapper {
     border-radius: 20px;
