@@ -1,1 +1,107 @@
+/* ===== Section shell ===== */
+.section.expertblock.experts-container {
+  background: #fff;
+  padding: 28px 16px 40px;
+  color: #222;
+}
 
+/* Centered title block */
+.experts-container .default-content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto 18px;
+  text-align: center;
+}
+
+.experts-container .default-content-wrapper h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: clamp(24px, 3.2vw, 36px);
+  line-height: 1.2;
+}
+
+/* ===== Grid wrapper ===== */
+.experts-container .experts-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* The block itself contains 3 direct children <div> (each card) */
+.experts-container .experts.block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 3vw, 32px);
+  align-items: start;
+}
+
+/* Each card container */
+.experts-container .experts.block > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Image area ===== */
+/* The first inner <div> inside each card holds the <picture> */
+.experts-container .experts.block > div > div:first-child {
+  position: relative;
+  width: 100%;
+  /* 4:3 visual proportion like the screenshot */
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+/* Ensure the picture/img fills and crops nicely */
+.experts-container .experts.block picture,
+.experts-container .experts.block img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.experts-container .experts.block img {
+  object-fit: cover;
+  object-position: center;
+  /* subtle polish */
+  transform: translateZ(0);
+}
+
+/* ===== Name (second inner <div> -> <h2>) ===== */
+.experts-container .experts.block > div > div:last-child {
+  text-align: center;
+}
+
+.experts-container .experts.block > div > div:last-child h2 {
+  margin: 10px 0 0;
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: 500;
+  color: #333;
+}
+
+/* ===== Spacing alignment with screenshot ===== */
+@media (min-width: 1200px) {
+  .experts-container .experts.block {
+    gap: 28px; /* comfortable space between the three cards */
+  }
+}
+
+/* ===== Responsive behavior ===== */
+@media (max-width: 900px) {
+  .experts-container .experts.block {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 520px) {
+  .experts-container .experts.block {
+    grid-template-columns: 1fr; /* single column on phones */
+  }
+}
+
+/* Optional: consistent smoothing */
+.experts-container * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.experts-members #experts-members{
+  text-align: center;
+}
