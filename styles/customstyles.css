@@ -168,7 +168,7 @@
   .nav-brand img { max-height: 28px; }
 }
 
-.custom-slides > .carousel-wrapper > .carousel > .carousel-slides-container > .carousel-slide-content > p > a {
+.custom-slides > .carousel-wrapper > .carousel > .carousel-slides-container > .carousel-slides > .carousel-slide-content > p > a {
     display: inline-flex;
     justify-content: center;
     gap: 8px;
