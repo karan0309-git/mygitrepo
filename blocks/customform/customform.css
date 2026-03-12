@@ -9,7 +9,7 @@
 }
 
 .customform form {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 24px;
 }
@@ -276,4 +276,3 @@
     font-size: 17px;
   }
 }
-
