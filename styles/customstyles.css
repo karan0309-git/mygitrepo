@@ -219,11 +219,8 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
     color: white;
 }
  
-.custom-cards > .cards-wrapper > .cards > ul > li > cards-card-image {
-    height:20px;
-    width: 20px;
-    padding: 20px 80px;
-    background: none;
+.custom-cards > .cards-wrapper > .cards > ul > li > .cards-card-image img {
+    width:130px;
 }
 .custom-cards > .cards-wrapper {
     border-radius: 20px;
@@ -242,14 +239,21 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
     justify-content: center;
     margin:0 auto;
 }
- 
+
+.custom-cards1 > .cards-wrapper > .cards {
+    text-align:center;
+}
+
+.custom-cards1 > .cards-wrapper > .cards > ul >li {
+    height:290px;
+}
 .custom-cards1 > .cards-wrapper > .cards > ul > li:hover {
     background-color:#98a04a;
     color: white;;
 }
  
 .custom-cards1 > .cards-wrapper > .cards > ul > li > .cards-card-image img {
-   width:150px;
+   width:130px;
 }
  .custom-cards1 > .cards-wrapper {
     border-radius: 20px;
