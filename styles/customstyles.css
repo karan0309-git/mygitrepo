@@ -168,6 +168,16 @@
   .nav-brand img { max-height: 28px; }
 }
 
+.custom-slides > .carousel-wrapper > .carousel > .carousel-slides-container > .carousel-slides > .carousel-slide-content > p > a {
+    display: inline-flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background-color: var(--olive);
+    color: white;
+} 
+
 .custom-cards > .cards-wrapper {
     margin-top: -50px;
 }
