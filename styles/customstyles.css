@@ -187,11 +187,8 @@
     color: white;
 }
 
-.custom-cards > .cards-wrapper > .cards > ul > li > cards-card-image {
-    height:20px;
-    width: 20px;
-    padding: 20px 80px;
-    background: none;
+.custom-cards > .cards-wrapper > .cards > ul > li > cards-card-image > img {
+    width:60px;
 }
 
 .custom-cards > .cards-wrapper {
