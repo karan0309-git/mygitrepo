@@ -1,0 +1,54 @@
+/* main bar */
+.nav-head{
+  background: linear-gradient(90deg,#9a8d2f,#b8aa48);
+  padding: 40px 80px;
+  overflow: hidden;
+  position: relative;
+}
+ 
+/* track */
+.nav-head-2{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:90px;
+  transition: transform 0.6s ease;
+}
+ 
+/* icons */
+.nav-head-2 img{
+  width:70px;
+  height:auto;
+  display:block;
+  flex-shrink:0;
+}
+ 
+/* arrows */
+.nav-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  border:none;
+  background:#e4c44d;
+  color:#fff;
+  font-size:24px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+ 
+.nav-arrow.prev{
+  left:20px;
+}
+ 
+.nav-arrow.next{
+  right:20px;
+}
+ 
+.nav-arrow:hover{
+  background:#cfa72a;
+}
