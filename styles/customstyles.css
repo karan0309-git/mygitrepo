@@ -200,12 +200,12 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
   margin-left: 59%;
 }
 
-.carousel .carousel-slide .carousel-slide-content {
+.custom-slides > .carousel > .carousel-slide > .carousel-slide-content {
     background-color: none;
     color:white:
 }
 
-.carousel-slide-content > p.button-wrapper {
+.custom-slides > a.button.primary, .custom-slides > button.button.primary {
     margin: 12px 0;
     display: inline-block;
     background-color:#98a04a;
