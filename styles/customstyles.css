@@ -190,7 +190,9 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
 /*nav top header changes*/
 .message-from .columns-wrapper{
   position: absolute;
+  width:100%;
 }
+
 .message-from .customform-wrapper{
   margin-left: 45%;
   margin-top: -5%;
