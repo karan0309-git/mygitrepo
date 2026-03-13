@@ -1,33 +1,83 @@
+/* --- Grid container: 3 columns on desktop --- */
 .card {
-    display: grid;                        /* enable grid */
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 24px;
-    justify-content: center;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr)); /* 3/3 grid */
+  gap: 24px;
+  justify-content: center;      /* center the grid block within its parent */
+  width: 100%;
+  margin: 0 auto;
 }
 
+/* --- Card item --- */
 .wheat-strategy {
-    background-color: #ffffff;
-    width: 100%;                           /* allow grid to control sizing */
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease,
-                box-shadow 0.3s ease,
-                transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.4);
-    border-radius: 10px;
-    float: none !important;                /* STOP float from breaking layout */
+  position: relative;           /* needed for the ::before overlay */
+  background: #ffffff;
+  color: #111;
+  width: 100%;                  /* let grid control sizing */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(128, 128, 128, 0.4);
+  overflow: hidden;             /* clip the hover fill inside the card */
+  transition: transform .15s ease, box-shadow .2s ease;
+  /* remove legacy layout breakers */
+  float: none !important;
+  max-width: none !important;
 }
 
+/* --- Hover fill overlay (bottom → top) --- */
+.wheat-strategy::before {
+  content: "";
+  position: absolute;
+  inset: 0;                     /* cover the card */
+  background: #ffd400;          /* your yellow fill */
+  transform: translateY(100%);  /* start hidden below */
+  transition: transform .35s ease;
+  z-index: 0;                   /* behind content */
+}
+
+/* Lift + shadow on hover */
 .wheat-strategy:hover {
-    background-color: #4caf50;
-    color: #ffffff;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(128, 128, 128, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(128, 128, 128, 0.45);
 }
 
-/* Fix nested selector */
-.wheat-strategy:hover .lazy {
-    background-color: #4caf50;
+/* Animate the fill from bottom to top on hover */
+.wheat-strategy:hover::before {
+  transform: translateY(0);     /* fills upward */
+}
+
+/* Ensure content stays above the overlay */
+.wheat-strategy > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: switch text & icon colors on hover for contrast */
+.wheat-strategy:hover,
+.wheat-strategy:focus-within {
+  color: #111;                  /* choose #111 or #fff depending on contrast you want */
+}
+
+/* If you use <img> icons, you can tint via filter; for mask/SVG, set fill via CSS */
+.wheat-strategy:hover img.icon-to-white {
+  filter: brightness(0) invert(1);  /* makes dark icons white on yellow */
+}
+
+/* --- Responsive: 2 columns on tablets, 1 on phones --- */
+@media (max-width: 1024px) {
+  .card { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
+}
+@media (max-width: 600px) {
+  .card { grid-template-columns: 1fr; }
+}
+
+/* --- Accessibility: respect reduced motion --- */
+@media (prefers-reduced-motion: reduce) {
+  .wheat-strategy,
+  .wheat-strategy::before {
+    transition: none;
+    transform: none;
+  }
 }
