@@ -192,7 +192,7 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
   position: absolute;
 }
 .message-from .customform-wrapper{
-  margin-left: 55%;
+  margin-left: 45%;
   margin-top: -5%;
   
 }
