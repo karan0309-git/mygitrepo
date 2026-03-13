@@ -200,6 +200,11 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
   margin-left: 59%;
 }
 
+.carousel-slide-content {
+    backgroundcolor: none;
+    color:white:
+}
+
 .carousel-slide-content > p.button-wrapper {
     margin: 12px 0;
     display: inline-block;
