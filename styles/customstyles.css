@@ -388,7 +388,7 @@ form[data-action="/contactform"] .form-submit{ justify-self: start; }
 }
 
 .custom-slides > .carousel-wrapper > .carousel > .carousel-slides-container > .carousel-slide-indicators {
-    display:none;
+    display:none !important;
 }
 /*header section image changes*/
 
