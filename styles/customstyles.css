@@ -188,12 +188,16 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
   .nav-brand img { max-height: 28px; }
 }
 /*nav top header changes*/
-.message-from .columns-wrapper{
+.message-from > .columns-wrapper{
   position: absolute;
   width:100%;
 }
 
-.message-from .customform-wrapper{
+.message-from > .columns-wrapper > .columns > ul > li {
+  padding-top: 20px;
+}
+
+.message-from > .customform-wrapper{
   margin-left: 45%;
   margin-top: -5%;
   
