@@ -219,7 +219,9 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
 
 /*Custom cards section both*/
 .custom-cards > .cards-wrapper {
-    margin-top: -50px;
+    margin-top: -83px;
+    position: relative;
+    width: 88%;
 }
  
 .custom-cards > .cards-wrapper > .cards {
