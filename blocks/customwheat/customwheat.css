@@ -1,53 +1,30 @@
-
-.card {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(240px, 1fr)); /* 3/3 grid */
-  gap: 24px;
-  justify-content: center;   /* center the whole grid block */
-  width: 100%;
-  margin: 0 auto;
+.card { 
+    justify-content: center;    /* center the grid */
 }
 
-/* === Card item === */
+h1{
+    text-align:center;
+}
+
 .wheat-strategy {
-  position: relative;         /* for the overlay */
-  background: #ffffff;
-  color: #111;
-  width: 100%;                /* grid controls the size */
-  padding: 20px;
-  text-align: center;
-  box-sizing: border-box;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(128,128,128,.4);
-  overflow: hidden;           /* clip hover fill to card radius */
-  transition: transform .15s ease, box-shadow .2s ease;
-
-  /* IMPORTANT: ensure legacy styles don't break grid */
-  float: none !important;
-  max-width: none !important;
-  margin: 0 !important;       /* gaps are handled by grid */
-}
-
-/* === Bottom-to-top yellow background on hover === */
-.wheat-strategy::before {
-  content: "";
-  position: absolute;
-  inset: 0;                   /* cover the card */
-  background: #ffd400;        /* yellow fill */
-  transform: translateY(100%);/* start hidden below */
-  transition: transform .35s ease;
-  z-index: 0;                 /* sit behind content */
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 350px;
+    margin: 10px 40px 20px 10px;
+    text-align: center;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.4);
 }
 
 .wheat-strategy:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(128,128,128,.45);
-}
-
-.wheat-strategy:hover::before {
-  transform: translateY(0);   /* animate fill upward */
-}
-
-.customwheat {
-    display:flex;
+    background-color: #4caf50;  
+    color: #ffffff;             
+    transform: translateY(-5px); /* lifts the card upward */
+    box-shadow: 0 8px 12px rgba(128, 128, 128, 0.6); /* shadow appears from below */
+    .lazy{
+    background-color:#4caf50;
+ }
 }
