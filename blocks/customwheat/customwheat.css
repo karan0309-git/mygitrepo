@@ -47,3 +47,7 @@
 .wheat-strategy:hover::before {
   transform: translateY(0);   /* animate fill upward */
 }
+
+.customwheat {
+    display:flex;
+}
