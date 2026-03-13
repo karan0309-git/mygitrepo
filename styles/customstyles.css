@@ -233,6 +233,7 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
 .custom-cards > .cards-wrapper > .cards > ul > li > .cards-card-image img {
     width:130px;
 }
+
 .custom-cards > .cards-wrapper {
     border-radius: 20px;
     border: transparent;
@@ -245,6 +246,7 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
 .cards-container > .default-content-wrapper > h2 {
     text-align: center;
 }
+
 .cards-container > .default-content-wrapper > .cards-wrapper > .cards {
     display:flex;
     justify-content: center;
@@ -258,6 +260,7 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
 .custom-cards1 > .cards-wrapper > .cards > ul >li {
     height:290px;
 }
+
 .custom-cards1 > .cards-wrapper > .cards > ul > li:hover {
     background-color:#98a04a;
     color: white;;
@@ -266,6 +269,7 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
 .custom-cards1 > .cards-wrapper > .cards > ul > li > .cards-card-image img {
    width:130px;
 }
+
  .custom-cards1 > .cards-wrapper {
     border-radius: 20px;
     border: transparent;
@@ -426,6 +430,7 @@ form[data-action="/contactform"] .form-submit{ justify-self: start; }
       -webkit-text-fill-color: #FFDA00;
     }
   }
+    
   .columns-wrapper{
     overflow: hidden;
   }  
@@ -435,6 +440,7 @@ form[data-action="/contactform"] .form-submit{ justify-self: start; }
     transform: translate(-100%, 0);
   }
 }  
+
 .textscrollsection:hover ul{
   animation-play-state: paused;
 }
@@ -509,6 +515,7 @@ form[data-action="/contactform"] .form-submit{ justify-self: start; }
     grid-template-columns: 1fr;
   }
 }
+
 .footer-wrapper{
     background-position: center center;
     background-image: url(https://themeloto.com/wps/whaet/wp-content/uploads/2024/12/whaet-slider2.jpg);
@@ -517,9 +524,11 @@ form[data-action="/contactform"] .form-submit{ justify-self: start; }
     background: #a2a84c;
     z-index: 1; */
 }
+
 .footer-wrapper p, .footer-wrapper a, .footer-wrapper h2, .footer-wrapper li{
   color: #fff
 }
+
 .footer-wrapper a:hover{
   color:#A2A84C;
   text-decoration: none;
