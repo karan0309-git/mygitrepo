@@ -408,7 +408,7 @@ form[data-action="/contactform"] .form-submit{ justify-self: start; }
     color: white;
 }
 
-.custom-slides > .carousel-wrapper > .carousel > .carousel-slides-container > .carousel-slide-indicators > .carousel-slide-indicator button {
+.custom-slides > .carousel-wrapper .carousel-slide-indicators {
     display:none !important;
 }
 /*header section image changes*/
