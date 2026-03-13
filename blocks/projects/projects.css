@@ -64,7 +64,7 @@
 
 /* PROJECT GRID */
 
-.department.block {
+.projects.block {
 
   display: grid;
 
@@ -80,7 +80,7 @@
 
 /* Filter row spans full width */
 
-.department.block > div:first-child {
+.projects.block > div:first-child {
 
   grid-column: 1 / -1;
 
