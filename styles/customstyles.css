@@ -205,7 +205,7 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
     color:white:
 }
 
-.custom-slides > a.button.primary, .custom-slides > button.button.primary {
+.custom-slides > .carousel-slide-content > p.button-wrapper {
     margin: 12px 0;
     display: inline-block;
     background-color:#98a04a;
