@@ -1,83 +1,49 @@
-/* --- Grid container: 3 columns on desktop --- */
+
 .card {
   display: grid;
   grid-template-columns: repeat(3, minmax(240px, 1fr)); /* 3/3 grid */
   gap: 24px;
-  justify-content: center;      /* center the grid block within its parent */
+  justify-content: center;   /* center the whole grid block */
   width: 100%;
   margin: 0 auto;
 }
 
-/* --- Card item --- */
+/* === Card item === */
 .wheat-strategy {
-  position: relative;           /* needed for the ::before overlay */
+  position: relative;         /* for the overlay */
   background: #ffffff;
   color: #111;
-  width: 100%;                  /* let grid control sizing */
-  text-align: center;
+  width: 100%;                /* grid controls the size */
   padding: 20px;
+  text-align: center;
   box-sizing: border-box;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(128, 128, 128, 0.4);
-  overflow: hidden;             /* clip the hover fill inside the card */
+  box-shadow: 0 4px 8px rgba(128,128,128,.4);
+  overflow: hidden;           /* clip hover fill to card radius */
   transition: transform .15s ease, box-shadow .2s ease;
-  /* remove legacy layout breakers */
+
+  /* IMPORTANT: ensure legacy styles don't break grid */
   float: none !important;
   max-width: none !important;
+  margin: 0 !important;       /* gaps are handled by grid */
 }
 
-/* --- Hover fill overlay (bottom → top) --- */
+/* === Bottom-to-top yellow background on hover === */
 .wheat-strategy::before {
   content: "";
   position: absolute;
-  inset: 0;                     /* cover the card */
-  background: #ffd400;          /* your yellow fill */
-  transform: translateY(100%);  /* start hidden below */
+  inset: 0;                   /* cover the card */
+  background: #ffd400;        /* yellow fill */
+  transform: translateY(100%);/* start hidden below */
   transition: transform .35s ease;
-  z-index: 0;                   /* behind content */
+  z-index: 0;                 /* sit behind content */
 }
 
-/* Lift + shadow on hover */
 .wheat-strategy:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(128, 128, 128, 0.45);
+  box-shadow: 0 10px 20px rgba(128,128,128,.45);
 }
 
-/* Animate the fill from bottom to top on hover */
 .wheat-strategy:hover::before {
-  transform: translateY(0);     /* fills upward */
-}
-
-/* Ensure content stays above the overlay */
-.wheat-strategy > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* Optional: switch text & icon colors on hover for contrast */
-.wheat-strategy:hover,
-.wheat-strategy:focus-within {
-  color: #111;                  /* choose #111 or #fff depending on contrast you want */
-}
-
-/* If you use <img> icons, you can tint via filter; for mask/SVG, set fill via CSS */
-.wheat-strategy:hover img.icon-to-white {
-  filter: brightness(0) invert(1);  /* makes dark icons white on yellow */
-}
-
-/* --- Responsive: 2 columns on tablets, 1 on phones --- */
-@media (max-width: 1024px) {
-  .card { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
-}
-@media (max-width: 600px) {
-  .card { grid-template-columns: 1fr; }
-}
-
-/* --- Accessibility: respect reduced motion --- */
-@media (prefers-reduced-motion: reduce) {
-  .wheat-strategy,
-  .wheat-strategy::before {
-    transition: none;
-    transform: none;
-  }
+  transform: translateY(0);   /* animate fill upward */
 }
