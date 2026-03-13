@@ -386,6 +386,10 @@ form[data-action="/contactform"] .form-submit{ justify-self: start; }
     background-color: var(--olive);
     color: white;
 }
+
+.custom-slides > .carousel-wrapper > .carousel > .carousel-slides-container > .carousel-slide-indicators {
+    display:none:
+}
 /*header section image changes*/
 
 /*header section image changes*/
