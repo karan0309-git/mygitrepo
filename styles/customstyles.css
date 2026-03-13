@@ -411,7 +411,7 @@ form[data-action="/contactform"] .form-submit{ justify-self: start; }
 }
 
 .custom-slides > .carousel-wrapper .carousel-slide-indicators {
-    display:none !important;
+    display:none;
 }
 /*header section image changes*/
 
