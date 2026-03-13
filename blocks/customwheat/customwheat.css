@@ -1,33 +1,33 @@
-
 .card {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(240px, 1fr)); /* 3 per row */
-  gap: 24px;
-  justify-content: center;   /* center the whole grid block */
-  align-content: start;
-  margin: 0 auto;
-  max-width: 1200px;         /* optional page width cap */
+    display: grid;                        /* enable grid */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 24px;
+    justify-content: center;
+    width: 100%;
 }
 
-/* Individual card (grid item) */
 .wheat-strategy {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform .15s ease;
-  box-shadow: 0 4px 8px rgba(128, 128, 128, 0.4);
-  border-radius: 10px;        /* optional rounding */
-  width: 100%;                /* grid controls width */
-  max-width: none;            /* let grid size it */
-  margin: 0;                  /* grid handles gaps */
-  float: none;                /* IMPORTANT: kill floats */
+    background-color: #ffffff;
+    width: 100%;                           /* allow grid to control sizing */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease,
+                box-shadow 0.3s ease,
+                transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+    float: none !important;                /* STOP float from breaking layout */
 }
 
-/* Hover state */
 .wheat-strategy:hover {
-  background-color: #4caf50;
-  color: #ffffff;
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(128, 128, 128, 0.6);
+    background-color: #4caf50;
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(128, 128, 128, 0.6);
+}
+
+/* Fix nested selector */
+.wheat-strategy:hover .lazy {
+    background-color: #4caf50;
 }
