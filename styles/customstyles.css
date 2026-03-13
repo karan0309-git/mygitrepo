@@ -377,7 +377,7 @@ form[data-action="/contactform"] .form-submit{ justify-self: start; }
   color: var(--c-text);
 }
 /*topslider button changes*/
-.custom-slider > .carousel-wrapper > .carousel > .carousel-slides-container > .carousel-slides > .carousel-slide-content > p > a {
+.custom-slides > .carousel-wrapper > .carousel > .carousel-slides-container > .carousel-slides > .carousel-slide-content > p > a {
     display: inline-flex; 
     justify-content: center;
     gap: 8px;
