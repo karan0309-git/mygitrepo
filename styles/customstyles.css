@@ -200,7 +200,7 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
   margin-left: 59%;
 }
 
-.custom-slides > .carousel > .carousel-slide > .carousel-slide-content {
+.carousel-slide-content {
     background-color: none;
     color:white:
 }
