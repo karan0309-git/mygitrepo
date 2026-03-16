@@ -19,6 +19,7 @@
 
                 width:60%;
 
+                margin-right: 40px;
         }
 
     } 
@@ -51,11 +52,11 @@
 
 .goals.block img {
 
-  width: 100%;height: revert-layer;
+  width: 100%;
+    
+  height: revert-layer;
 
   max-width: 450px;
-
-  border-radius: 6px;
 
 }
  
