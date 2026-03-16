@@ -213,7 +213,7 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
 
 .carousel-slide-content > .button-wrapper > a.button.primary {
     display: inline-block;
-    border-color: none;
+    border: none;
     background-color: #98a04a;
 }
 
