@@ -142,7 +142,8 @@
   height: auto;
 
   display: block;
- 
+  
+  margin-left: 60px;
 }
 
 .goals-description {
