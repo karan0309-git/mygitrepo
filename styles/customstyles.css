@@ -236,12 +236,14 @@ p.button-wrapper {
 
 .custom-cards > .cards-wrapper > .cards > ul >li {
     height:200px;
+    border-radius: 5px;
 }
 
 
 .custom-cards > .cards-wrapper > .cards > ul > li:hover  {
     background-color:#98a04a;
     color: white;
+    border-radius: none;
 }
  
 .custom-cards > .cards-wrapper > .cards > ul > li > .cards-card-image img {
