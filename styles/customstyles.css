@@ -216,9 +216,12 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
     border-color: none;
     background-color: #98a04a;
 }
+
 p.button-wrapper {
   margin: 0;
+  display: inline-block;
 }
+
 /*Custom cards section both*/
 .custom-cards > .cards-wrapper {
     margin-top: -83px;
