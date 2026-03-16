@@ -212,9 +212,9 @@ header nav .nav-sections .nav-drop[aria-expanded="true"]::after
 }
 
 .carousel-slide-content > .button-wrapper > a.button.primary {
-    margin: 12px 0;
     display: inline-block;
-    background-color:#98a04a;
+    border-color: none;
+    background-color: #98a04a;
 }
 
 /*Custom cards section both*/
