@@ -1,124 +1,32 @@
-/* ---------- Tokens (tweak as needed) ---------- */
-:root {
-  --olive: #AEB66F;             /* accent */
-  --text: #111216;
-  --muted: #6b7280;
-  --card-bg: #ffffff;
-  --radius: 14px;
-  --shadow: 0 10px 28px rgba(16,24,40,.08);
-  --shadow-hover: 0 14px 36px rgba(16,24,40,.12);
-}
-
-/* ---------- Wrapper ---------- */
+/* Wrapper (optional spacing) */
 .custestimonials {
-  padding: clamp(24px, 6vw, 64px) 16px;
-  background: transparent;
+  padding: clamp(16px, 4vw, 40px);
 }
 
-/* ---------- Flex row of cards ---------- */
+/* Make each item take a full row */
 .custestimonials .eds-list {
-  display: flex;                 /* FLEX, not grid */
-  flex-wrap: wrap;               /* wrap to next line */
-  gap: 24px;                     /* space between cards */
-  justify-content: center;       /* center the row */
-  align-items: stretch;          /* equal height cards */
+  display: flex;
+  flex-direction: column;     /* stack rows */
+  gap: 16px;                  /* space between row-cards */
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* Each list item behaves like a responsive card column */
+/* Row as a card */
 .custestimonials .eds-item {
-  flex: 1 1 clamp(260px, 30%, 360px); 
-  /* ^ base ~260–360px per card; ~3 per row on desktop */
-  max-width: 100%;
+  flex: 1 1 auto;             /* full width row */
 }
 
-/* ---------- Card ---------- */
 .custestimonials .eds-card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  text-align: center;
-
-  background: var(--card-bg);
-  color: var(--text);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 28px 22px 24px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 28px rgba(16,24,40,.08);
   transition: box-shadow .2s ease, transform .12s ease;
 }
 
 .custestimonials .eds-card:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-hover);
-}
-
-/* ---------- Top icon badge (optional) ---------- */
-.custestimonials .eds-icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 2px;
-  border-radius: 50%;
-  background: var(--olive);
-  display: grid;
-  place-items: center;
-}
-
-.custestimonials .eds-icon img {
-  width: 34px; height: 34px;
-  object-fit: contain;
-  display: block;
-  filter: brightness(0) invert(1); /* icon appears white on olive */
-}
-
-/* ---------- Text ---------- */
-.custestimonials .eds-title {
-  margin: 4px 0 2px;
-  font: 700 18px/1.25 system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-  color: var(--text);
-}
-
-.custestimonials .eds-quote {
-  margin: 0;
-  color: var(--muted);
-  font: 500 15px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-
-  /* clamp long quotes to 4 lines to keep card heights tidy */
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
-}
-
-/* ---------- Footer / author ---------- */
-.custestimonials .eds-meta {
-  margin-top: auto;              /* push to bottom for consistent spacing */
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 12px;
-  align-items: center;
-  justify-items: start;
-}
-
-.custestimonials .eds-avatar {
-  width: 56px; height: 56px; border-radius: 50%;
-  object-fit: cover; display: block;
-  box-shadow: 0 2px 8px rgba(16,24,40,.14);
-}
-
-.custestimonials .eds-name {
-  font: 700 15px/1.2 system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-  color: var(--text);
-}
-
-.custestimonials .eds-role {
-  font: 500 13px/1.2 system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-  color: var(--muted);
-}
-
-/* ---------- Small screens ---------- */
-@media (max-width: 640px) {
-  .custestimonials .eds-item { flex-basis: 100%; }
+  box-shadow: 0 14px 36px rgba(16,24,40,.12);
 }
