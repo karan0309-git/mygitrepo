@@ -1,1 +1,146 @@
+:root{
+  --eds-olive: #AEB66F;      /* accent */
+  --eds-text: #111216;
+  --eds-muted: #6b7280;
+  --eds-bg: #ffffff;
 
+  --eds-radius: 16px;
+  --eds-shadow: 0 10px 30px rgba(16,24,40,.08);
+  --eds-shadow-hover: 0 14px 40px rgba(16,24,40,.12);
+}
+
+/* Section spacing (optional) */
+.custestimonials {
+  padding: clamp(24px, 6vw, 64px) 16px;
+  background: transparent;
+}
+
+/* Slider shell */
+.custestimonials .eds-slider {
+  position: relative;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* Prev/Next buttons */
+.custestimonials .eds-nav {
+  position: absolute;
+  inset-block: 0;
+  margin-block: auto;
+  width: 44px;
+  height: 44px;
+  z-index: 3;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--eds-olive);
+  box-shadow: 0 2px 10px rgba(0,0,0,.12);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background .2s ease, transform .06s ease, color .2s ease;
+}
+.custestimonials .eds-nav:hover { background: var(--eds-olive); color: #fff; }
+.custestimonials .eds-nav:active { transform: translateY(1px); }
+.custestimonials .eds-prev { left: -6px; }
+.custestimonials .eds-next { right: -6px; }
+
+/* Viewport & track */
+.custestimonials .eds-viewport {
+  overflow: hidden;
+  border-radius: var(--eds-radius);
+}
+.custestimonials .eds-track {
+  display: flex;
+  will-change: transform;
+  transition: transform .4s ease;
+}
+
+/* Slides (responsive items per view via CSS) */
+.custestimonials .eds-slide {
+  flex: 0 0 100%;             /* mobile: 1 per view */
+  padding: 12px;
+  box-sizing: border-box;
+}
+@media (min-width: 700px) {
+  .custestimonials .eds-slide { flex-basis: 50%; }    /* tablet: 2 per view */
+}
+@media (min-width: 1024px) {
+  .custestimonials .eds-slide { flex-basis: 33.3333%; } /* desktop: 3 per view */
+}
+
+/* Card */
+.custestimonials .eds-card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 12px;
+  height: 100%;
+  background: var(--eds-bg);
+  color: var(--eds-text);
+  border-radius: var(--eds-radius);
+  padding: 28px 22px 22px;
+  text-align: center;
+  box-shadow: var(--eds-shadow);
+  transition: box-shadow .2s ease, transform .12s ease;
+}
+.custestimonials .eds-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--eds-shadow-hover);
+}
+
+/* Quote badge */
+.custestimonials .eds-quote {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 6px;
+  border-radius: 50%;
+  background: var(--eds-olive);
+  color: #fff;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+/* Text + meta */
+.custestimonials .eds-text {
+  margin: 0;
+  color: var(--eds-text);
+  font: 500 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+.custestimonials .eds-meta {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 12px;
+  align-items: center;
+  justify-items: start;
+  margin-top: 10px;
+}
+.custestimonials .eds-avatar {
+  width: 56px; height: 56px; border-radius: 50%;
+  object-fit: cover; display: block;
+  box-shadow: 0 2px 8px rgba(16,24,40,.14);
+}
+.custestimonials .eds-name { font: 700 15px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial; color: var(--eds-text); }
+.custestimonials .eds-role { font: 500 13px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial; color: var(--eds-muted); }
+
+/* Dots */
+.custestimonials .eds-dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 18px;
+}
+.custestimonials .eds-dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: #cfd3c0; cursor: pointer; border: 0;
+  transition: transform .12s ease, background .2s ease;
+}
+.custestimonials .eds-dot[aria-selected="true"] { background: var(--eds-olive); transform: scale(1.15); }
+
+/* Focus rings */
+.custestimonials .eds-nav:focus-visible,
+.custestimonials .eds-dot:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--eds-olive) 60%, transparent);
+  outline-offset: 2px;
+}
